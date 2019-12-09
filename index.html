@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lalune</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="https://use.fontawesome.com/be56dab0d5.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.visible.js"></script>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div class="header">
+		<a href=""><img width="20%" src="images/logo.png"></a>
+		<ul class="header_menu">
+			<li><a href="">Lune Lab</a></li>
+			<li><a href="">Shop</a></li>
+		</ul>
+	</div>
+	<!-- END OF HEADER -->
+	
+	<!-- MENU -->
+	<a class="menu_title" href="index.html">
+		<i class="fa fa-circle-o" id="icon" aria-hidden="true"></i> Menu </a>
+	<div class="sidebar">
+	  <div class="menu">
+	  	<div>
+		  	<ul>
+	        	<li><a href="about.html"><span class="uptext">01</span> About us</a></li>
+	            <li><a href="menu.html"><span class="uptext">02</span> Menu</a></li>
+	            <li><a href="gallery.html"><span class="uptext">03</span> Galley</a></li>
+	            <li><a href="contact.html"><span class="uptext">04</span> Contact</a></li>
+	        </ul>
+	  	</div>
+    	
+	  </div>
+	    <div class="header_pic" >
+			<img src="images/index.JPG" alt="this is an image"/>
+	    </div>
+	</div>
+	<!-- END OF MENU -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sidebar').addClass('check');
+			$('.menu').addClass('btnCheck');
+		});
+	</script>
+</body>	
+</html>

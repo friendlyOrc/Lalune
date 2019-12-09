@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body><script type="text/javascript">
+	$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+$(window).on('resize scroll', function() {
+  $('.color').each(function() {
+      var activeColor = $(this).attr('id');
+    if ($(this).isInViewport()) {
+      $('#fixed-' + activeColor).addClass(activeColor + '-active');
+    } else {
+      $('#fixed-' + activeColor).removeClass(activeColor + '-active');
+    }
+  });
+});
+</script>
+	<style type="text/css">
+		html,
+body {
+  height: 100%;
+}
+
+.fixed-red,
+.fixed-green,
+.fixed-blue {
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #333;
+}
+
+.fixed-green {
+  top: 50px;
+}
+
+.fixed-blue {
+  top: 90px;
+}
+
+.red-active {
+  background: #f00;
+}
+
+.green-active {
+  background: #0f0;
+}
+
+.blue-active {
+  background: #00f;
+}
+
+.color {
+  width: 100%;
+  height: 100%;
+}
+
+#red {
+  background: #900;
+}
+
+#green {
+  background: #090;
+}
+
+#blue {
+  background: #009;
+}
+	</style>
+<div id="fixed-red" class="fixed-red red-active"></div>
+<div id="fixed-green" class="fixed-green"></div>
+<div id="fixed-blue" class="fixed-blue"></div>
+<div id="red" class="color"></div>
+<div id="green" class="color"></div>
+<div id="blue" class="color"></div>
+
+</body>
+</html>

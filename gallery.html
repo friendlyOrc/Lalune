@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lune Gallery</title>
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link href="css/gallery.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/font/css/all.css">
+<script src="https://use.fontawesome.com/be56dab0d5.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.visible.js"></script>
+
+</head>
+
+<body>
+	<!-- HEADER -->
+	<div class="_header">
+		<a href="index.html"><img width="20%" src="images/logo.png"></a>
+		<ul class="header_menu">
+			<li><a href="">Lune Lab</a></li>
+			<li><a href="">Shop</a></li>
+		</ul>
+	</div>
+	<!-- END OF HEADER -->
+	
+	<!-- MENU -->
+	<label class="menu_title" for="menu-toggle">
+		<i class="fa fa-circle-o" id="icon" aria-hidden="true"></i> Menu </label>
+	<input type="checkbox" id="menu-toggle"/>
+	<div class="_sidebar">
+	  <div class="_menu">
+	  	<div>
+		  	<ul>
+	        	<li><a href="about.html"><span class="uptext">01</span> About us</a></li>
+	            <li><a href="menu.html"><span class="uptext">02</span> Menu</a></li>
+	            <li><a href="gallery.html"><span class="uptext">03</span> Galley</a></li>
+	            <li><a href="contact.html"><span class="uptext">04</span> Contact</a></li>
+	        </ul>
+	  	</div>
+    	
+	  </div>
+	    <div class="header_pic" >
+			<img style="width: 100%;" src="images/index.JPG" alt="this is an image"/>
+	    </div>
+	</div>
+	<!-- END OF MENU -->
+	<div class=" gal-menu">
+		<div class="gal-item g1">
+			<!-- <img src="images/gal1.jpg"> -->
+			<div class="gal-icon">
+				<div class="round">
+					<i class="fas fa-plus"></i>
+				</div>
+				<svg height = "12vw" width = "4vw">
+					<line x1 = "2vw" y1 = "1vw" x2 = "2vw" y2 = "12vw" style="stroke: #fff;stroke-width:1";/>
+				</svg>
+				<span>Tea</span>
+			</div>
+		</div>
+		<div class="gal-item g2">
+			<!-- <img src="images/gal2.jpg"> -->
+			<div class="gal-icon">
+				<div class="round">
+					<i class="fas fa-plus"></i>
+				</div>
+				<svg height = "12vw" width = "4vw">
+					<line x1 = "2vw" y1 = "1vw" x2 = "2vw" y2 = "12vw" style="stroke: #fff;stroke-width:1";/>
+				</svg>
+				<span>Space</span>
+			</div>
+		</div>
+		<div class="gal-item g3">
+			<!-- <img src="images/gal3.jpg"> -->
+			<div class="gal-icon">
+				<div class="round">
+					<i class="fas fa-plus"></i>
+				</div>
+				<svg height = "12vw" width = "4vw">
+					<line x1 = "2vw" y1 = "1vw" x2 = "2vw" y2 = "12vw" style="stroke: #fff;stroke-width:1";/>
+				</svg>
+				<span>Process</span>
+			</div>
+		</div>
+	</div>
+	<!-- CONTENT -->
+
+	<!-- END OF CONTENT -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.picbox').addClass('appear');
+			$('.list').addClass('appear');
+		});
+		$(function(){
+		    $(".menu_title").click(function(){
+		    	$('._menu').toggleClass("btnCheck");
+		        $('._sidebar').toggleClass("check");
+		        $('#icon').toggleClass('fa-circle-o')
+		        			.toggleClass('fa-circle');
+		    })
+		});
+
+	</script>
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>	
+</html>
